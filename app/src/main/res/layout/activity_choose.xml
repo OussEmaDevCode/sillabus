@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".choose"
+    android:background="@color/colorPrimary">
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/one"
+        android:text="the first letter :"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"
+            android:textColor="@android:color/white"
+            android:id="@+id/two"
+            android:layout_below="@id/one"
+            android:layout_centerHorizontal="true"
+            android:textSize="40sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="letters number : "
+            android:layout_below="@id/two"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:id="@+id/three"
+            android:textSize="40sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            android:id="@+id/four"
+            android:layout_below="@id/three"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_below="@id/four">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/lets"
+           android:background="@drawable/rounded"
+           android:text="let's go"
+           android:textColor="@color/colorPrimary"
+           android:layout_marginTop="24dp"
+           />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/regenerate"
+               android:textColor="@color/colorPrimary"
+               android:text="regenerate"
+               android:padding="8dp"
+               android:background="@drawable/rounded"
+               android:layout_marginLeft="12dp"
+               android:layout_marginTop="24dp"
+               />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/how_to"
+               android:textColor="@color/colorPrimary"
+               android:text="how to play"
+               android:padding="8dp"
+               android:background="@drawable/rounded"
+               android:layout_marginLeft="12dp"
+               android:layout_marginTop="24dp"
+               />
+       </LinearLayout>
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:hint="Your name"
+            android:textColor="@android:color/white"
+            android:id="@+id/yourname"
+            android:textColorHint="@android:color/white"
+            android:layout_height="match_parent" />
+        <EditText
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/yourfriend"
+            android:backgroundTint="@android:color/white"
+            android:hint="Your friend's name"
+            android:textColorHint="@android:color/white"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</RelativeLayout>
